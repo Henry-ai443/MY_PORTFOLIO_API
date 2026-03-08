@@ -7,6 +7,11 @@ const projectSchema = new mongoose.Schema(
       required: [true, "Project title is required"],
       trim: true,
     },
+    short_description: {
+      type: String,
+      required: [true, "Project short description is required"],
+      trim: true,
+    },
     description: {
       type: String,
       required: [true, "Project description is required"],

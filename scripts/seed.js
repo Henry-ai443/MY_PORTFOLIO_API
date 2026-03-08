@@ -25,6 +25,7 @@ async function seed() {
   await Project.create([
     {
       title: "General Conference Youth Portal",
+      short_description: "A comprehensive youth portal for the General Conference featuring events, resources, and community engagement tools.",
       description: "A youth-focused portal for the General Conference with events, resources, and community features.",
       category: webApps._id,
       link: "https://generalconferenceyouthportal.vercel.app/",
@@ -36,6 +37,7 @@ async function seed() {
     },
     {
       title: "Terra Smart",
+      short_description: "Smart agricultural platform for land management and farming optimization.",
       description: "Smart agricultural and land management platform.",
       category: webApps._id,
       link: "https://terrasmart.vercel.app/",

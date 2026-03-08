@@ -17,7 +17,7 @@ router.get("/:id", getProjectById);
 
 // Mutations require admin auth
 router.post("/", protect, upload.array("images", 10), createProject);
-router.put("/:id", protect, updateProject);
+router.patch("/:id", protect, upload.array("images", 10), updateProject);
 router.delete("/:id", protect, deleteProject);
 
 export default router;
